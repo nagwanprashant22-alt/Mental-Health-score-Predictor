@@ -156,22 +156,6 @@ Example response:
   "predicted_mental_health_score": 5.06
 }
 
-Render Deployment
-
-Use the following settings for the FastAPI backend:
-
-Language: Python 3
-Build Command: pip install -r requirements.txt
-Start Command: uvicorn main:app --host 0.0.0.0 --port $PORT
-
-After the backend is deployed, replace API_BASE in script.js with your own Render backend URL:
-
-const API_BASE = "https://your-backend-name.onrender.com";
-
-Deploy the frontend as a Render Static Site with:
-
-Build Command: (leave blank)
-Publish Directory: .
 
 Limitations
 
